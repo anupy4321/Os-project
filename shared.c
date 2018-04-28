@@ -17,12 +17,13 @@ void swap(int *xp, int *yp)
 int temp = *xp; *xp = *yp;
 *yp = temp;}
 void selectionSort(double arr[],int arr1[] ,int n)
-{ int i, j;
+{ 
+  int i, j;
 int min_idx;
-for (i = 0; i < n-1; i++) // the complexity of the loop is n
+for (i = 0; i < n-1; i++)  // the complexity of the loop is n
 {
 min_idx = i;
-for (j = i+1; j < n; j++) //the complexity of the log n^2 if (arr[j] < arr[min_idx])
+for (j = i+1; j < n; j++)  //the complexity of the log n^2 if (arr[j] < arr[min_idx])
 min_idx = j;
 swap1(&arr[min_idx], &arr[i]); swap(&arr1[min_idx], &arr1[i]);
 }
@@ -45,7 +46,8 @@ s=*t;
 }
 }
 int main()
-{ int i, n;
+{ 
+  int i, n;
 int ct[10];
 struct Process p[80]; int at,bt;
 printf("Enter number of processes\n"); scanf("%d",&n);
