@@ -119,7 +119,8 @@ if(p[i].pid==f){
 t=t+p[i].bt;
 } } }
 int w=5;
-if(e==0 && v>0){
+if(e==0 && v>0)
+{
 for( i=0;i<n;i++) //the complexity of the loop is n
 {
 if(t<p[i].at )
