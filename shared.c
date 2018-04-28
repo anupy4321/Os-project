@@ -15,17 +15,19 @@ double temp = *xp;
 void swap(int *xp, int *yp)
 {
 int temp = *xp; *xp = *yp;
-*yp = temp;}
+*yp = temp;
+}
 void selectionSort(double arr[],int arr1[] ,int n)
 { 
-  int i, j;
+int i, j;
 int min_idx;
 for (i = 0; i < n-1; i++)  // the complexity of the loop is n
 {
 min_idx = i;
 for (j = i+1; j < n; j++)  //the complexity of the log n^2 if (arr[j] < arr[min_idx])
 min_idx = j;
-swap1(&arr[min_idx], &arr[i]); swap(&arr1[min_idx], &arr1[i]);
+swap1(&arr[min_idx], &arr[i]); 
+swap(&arr1[min_idx], &arr1[i]);
 }
 }
 void sort1(struct Process *t,int p)
@@ -102,9 +104,9 @@ int l=e+1;
 double q[l];
 int z=4,k,o;
 for(k=0;k<l-1;k++)
-{ //the complexity of the loop is l
+{                        //the complexity of the loop is l
 for( o=0;o<n;o++)
-{ //the complexity of the loop is ln if(c[k]==p[o].pid){
+{             //the complexity of the loop is ln if(c[k]==p[o].pid){
 q[k]=1+(double)(t-p[o].at)/p[o].bt;
 }
 }
